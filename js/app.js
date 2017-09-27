@@ -194,21 +194,13 @@ activities.addEventListener("change", (e) => {
         if(jsFrameworks.checked)
              {
                 express.disabled = true; 
-                buildTools.disabled = true; 
+                
              }
         else if (express.checked)
             {
                 jsFrameworks.disabled = true;
-                buildTools.disabled = true;
             }
                 
-            
-        else if (buildTools.checked)
-            {
-                jsFrameworks.disabled = true;
-                express.disabled = true;
-                
-            }
         else
             {
                 
@@ -224,20 +216,10 @@ activities.addEventListener("change", (e) => {
              {
                 
                 nodeJS.disabled = true; 
-                npm.disabled = true;
              }
         else if (nodeJS.checked)
             {
                 jsLibraries.disabled = true;
-                npm.disabled = true;
-            }
-                
-            
-        else if (npm.checked)
-            {
-                jsLibraries.disabled = true;
-                nodeJS.disabled = true; 
-                
             }
         else
             {
